@@ -1,7 +1,5 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+if game.PlaceId == 155615604 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local XenaHub = Instance.new("ScreenGui")
 local MiscUI = Instance.new("Frame")
