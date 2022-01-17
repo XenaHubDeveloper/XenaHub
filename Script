@@ -142,7 +142,7 @@ superpunch.TextSize = 27.000
 
 -- Scripts:
 
-local function IKHO_fake_script() -- silentaim.LocalScript 
+local function SIXTUDJ_fake_script() -- silentaim.LocalScript 
 	local script = Instance.new('LocalScript', silentaim)
 
 	function Click() 
@@ -192,14 +192,17 @@ local function IKHO_fake_script() -- silentaim.LocalScript
 	end
 	script.Parent.MouseButton1Down:connect(Click) 
 end
-coroutine.wrap(IKHO_fake_script)()
-local function CGUWI_fake_script() -- Admin.LocalScript 
+coroutine.wrap(SIXTUDJ_fake_script)()
+local function DEGUJ_fake_script() -- Admin.LocalScript 
 	local script = Instance.new('LocalScript', Admin)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/jefflol1209/XenaAdmin/main/Admin"))();
+	function Click() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/jefflol1209/XenaAdmin/main/Admin"))();
+	end
+	script.Parent.MouseButton1Down:connect(Click) 
 end
-coroutine.wrap(CGUWI_fake_script)()
-local function XAEIXPQ_fake_script() -- guns.LocalScript 
+coroutine.wrap(DEGUJ_fake_script)()
+local function FRKCOT_fake_script() -- guns.LocalScript 
 	local script = Instance.new('LocalScript', guns)
 
 	function OnClicked() 
@@ -212,8 +215,8 @@ local function XAEIXPQ_fake_script() -- guns.LocalScript
 	script.Parent.MouseButton1Down:connect(OnClicked)
 	
 end
-coroutine.wrap(XAEIXPQ_fake_script)()
-local function OHTJ_fake_script() -- taserbypass.LocalScript 
+coroutine.wrap(FRKCOT_fake_script)()
+local function VFBDZW_fake_script() -- taserbypass.LocalScript 
 	local script = Instance.new('LocalScript', taserbypass)
 
 	function OnClicked() 
@@ -230,8 +233,8 @@ local function OHTJ_fake_script() -- taserbypass.LocalScript
 	script.Parent.MouseButton1Down:connect(OnClicked)
 	
 end
-coroutine.wrap(OHTJ_fake_script)()
-local function MSOLUG_fake_script() -- MiscUI.LocalScript 
+coroutine.wrap(VFBDZW_fake_script)()
+local function NQMO_fake_script() -- MiscUI.LocalScript 
 	local script = Instance.new('LocalScript', MiscUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -274,8 +277,8 @@ local function MSOLUG_fake_script() -- MiscUI.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MSOLUG_fake_script)()
-local function OPEAHUH_fake_script() -- Close.LocalScript 
+coroutine.wrap(NQMO_fake_script)()
+local function HCOIJ_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -284,8 +287,8 @@ local function OPEAHUH_fake_script() -- Close.LocalScript
 	
 	end)
 end
-coroutine.wrap(OPEAHUH_fake_script)()
-local function IPYSDQS_fake_script() -- godmode.LocalScript 
+coroutine.wrap(HCOIJ_fake_script)()
+local function PPZOMD_fake_script() -- godmode.LocalScript 
 	local script = Instance.new('LocalScript', godmode)
 
 	_G.Loop = true
@@ -300,8 +303,8 @@ local function IPYSDQS_fake_script() -- godmode.LocalScript
 		end
 	end
 end
-coroutine.wrap(IPYSDQS_fake_script)()
-local function CZXLOF_fake_script() -- MiscUI.LocalScript 
+coroutine.wrap(PPZOMD_fake_script)()
+local function XFRKQCS_fake_script() -- MiscUI.LocalScript 
 	local script = Instance.new('LocalScript', MiscUI)
 
 	local Plr = game.Players.LocalPlayer
@@ -312,12 +315,12 @@ local function CZXLOF_fake_script() -- MiscUI.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CZXLOF_fake_script)()
-local function ESBOX_fake_script() -- superpunch.LocalScript 
+coroutine.wrap(XFRKQCS_fake_script)()
+local function QSOXFF_fake_script() -- superpunch.LocalScript 
 	local script = Instance.new('LocalScript', superpunch)
 
 	superpunch.MouseButton1Down:connect(function()
 		mainRemotes = game.ReplicatedStorage meleeRemote = mainRemotes['meleeEvent'] mouse = game.Players.LocalPlayer:GetMouse() punching = false cooldown = false function punch() cooldown = true local part = Instance.new("Part", game.Players.LocalPlayer.Character) part.Transparency = 1 part.Size = Vector3.new(5, 2, 3) part.CanCollide = false local w1 = Instance.new("Weld", part) w1.Part0 = game.Players.LocalPlayer.Character.Torso w1.Part1 = part w1.C1 = CFrame.new(0,0,2) part.Touched:connect(function(hit) if game.Players:FindFirstChild(hit.Parent.Name) then local plr = game.Players:FindFirstChild(hit.Parent.Name) if plr.Name ~= game.Players.LocalPlayer.Name then part:Destroy() for i = 1,100 do meleeRemote:FireServer(plr) end end end end) wait(1) cooldown = false part:Destroy() end mouse.KeyDown:connect(function(key) if cooldown == false then if key:lower() == "f" then punch() end end end)
 	end)
 end
-coroutine.wrap(ESBOX_fake_script)()
+coroutine.wrap(QSOXFF_fake_script)()
