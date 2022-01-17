@@ -1,4 +1,3 @@
-if game.PlaceId == 155615604 then
 local XenaHub = Instance.new("ScreenGui")
 local MiscUI = Instance.new("Frame")
 local silentaim = Instance.new("TextButton")
